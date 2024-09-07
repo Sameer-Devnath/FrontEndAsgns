@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query check</title>
+    <style>
+        div{
+            width: 100%;
+            height: 1200px;
+            background-color: teal;
+            margin: auto;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            padding-top: 600px;
+        }
+        @media screen and (min-width:850px) and (max-width:1400px){
+            div{
+                background-color: teal;
+            }
+        }
+        @media screen and (min-width:450px) and (max-width:849px){
+            div{
+                background-color: blue;
+                color: whitesmoke;
+            }
+        }
+        @media screen and (min-width:0px) and (max-width:449px){
+            div{
+                background-color: red;
+                color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>Hey! Viewer, I promise I'll Change my color if you change my size</div>
+</body>
+</html>
