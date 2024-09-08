@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------------------------------title/navbar styling--------------------------------------*/
+.main{
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+}
+.top-bar{
+    width: 100%;
+    height: 90px;
+    background-color: #333333;
+    color: #00BCD4;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(82, 80, 80);
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-bar>div{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-bar>div>a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.nav-bar div:hover {
+    background: #ddd;
+    color: black;
+}
+.nav-bar select{
+    display: none;
+}
+
+/*--------------------------------Section styling--------------------------------------*/
+.Home-page{
+    width: 98%;
+    height: 180px;
+    margin: auto;
+    margin-top: 180px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Home-page>div{
+    width: 30%;
+    height: 80%;
+}
+.Home-page>div>img{
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+}
+.Home-page>div:nth-child(2){
+    text-align: center;
+}
+
+
+/*-----------------------------@media que. for medium/small screens--------------------------------------*/
+@media screen and (max-width:768px) {
+    .nav-bar div{
+        display: none;
+    }
+    .nav-bar select{
+        display: inline-block;
+        appearance: none;
+        border-radius: 5px;
+        background-color: #555;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    .Home-page{
+        flex-direction: column;
+    }
+    .Home-page>div{
+        text-align: center;
+    }
+    .Home-page>div>img{
+        width: 35%;
+        height: 100%;
+    }
+    .Home-page>div:nth-child(2){
+        width: 100%;
+        
+    }
+    h1,p{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
+ 

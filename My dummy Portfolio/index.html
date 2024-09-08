@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My dummy Portfolio</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-------------------------------------------Title and navbar-------------------------------------------------->
+    <div class="main">
+        <div class="top-bar">My Portfolio</div>                  <!----------Title---------->
+
+        <div class="nav-bar">
+            <div><a href="#home">Home</a></div>
+            <div><a href="#education">Education</a></div>
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#skills">Skills</a></div>
+            <div><a href="#contact">Contact Me</a></div>
+
+            <select class="nav-select">
+                <option value="#home">Home</option>
+                <option value="#education">Education</option>
+                <option value="#projects">Projects</option>
+                <option value="#skills">Skills</option>
+                <option value="#contact">Contact Me</option>
+            </select>
+        </div>
+    </div>
+    
+
+    <!------------------------------------------------Home section-------------------------------------------------->
+    <section>
+        <div id="home" class="Home-page">
+            <div><img src="https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg" alt="dummyPic"></div>
+            <div>
+                <h1 style="color: #4CAF50;">Home</h1>
+                <p>Hello, I am Sameer Devnath</p>
+            </div>
+        </div>
+
+        <div id="education" class="Home-page" style="margin-top: 50px;">
+            <div><img src="https://wallpapercave.com/wp/wp3191283.jpg" alt="edu"></div>
+            <div>
+                <h1 style="color: rgb(233,30,99);">Education</h1>
+                <p>My qualification: I am a Civil Engineer Graduate</p>
+            </div>
+        </div>
+
+        <div id="projects" class="Home-page"  style="margin-top: 50px;">
+            <div><img src="https://th.bing.com/th/id/OIP.xdkYsHta_MeHV_L6_i-Y4gAAAA?rs=1&pid=ImgDetMain" alt="MyPic"></div>
+            <div>
+                <h1 style="color: rgb(255,193,7);">Projects</h1>
+                <p>My Projects are based on techstack HTML, CSS and JS</p>
+            </div>
+        </div>
+
+        <div id="skills" class="Home-page"  style="margin-top: 50px;">
+            <div><img src="https://content.timesjobs.com/img/62614057/Master.jpg" alt="MyPic"></div>
+            <div>
+                <h1 style="color: rgb(156,39,176);">Skills</h1>
+                <p>My Skills are HTML, CSS, JS</p>
+            </div>
+        </div>
+
+        <div id="contact" class="Home-page"  style="margin-top: 50px;">
+            <div><img src="https://static7.depositphotos.com/1202020/776/i/450/depositphotos_7761196-stock-photo-contact-me-memo-note.jpg" alt="MyPic"></div>
+            <div>
+                <h1 style="color: rgb(33,150,243);">Contact Me</h1>
+                <p>You can contact me on :</p>
+                <div>
+                    <box-icon type='solid' name='contact'></box-icon>
+                    <box-icon name='gmail' type='logo' animation='tada' rotate='90' ></box-icon>
+                    <box-icon type='logo' name='linkedin-square'></box-icon>
+                    <box-icon type='logo' name='github'></box-icon>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-------------------------------eventListener for nav-items to navigate on desired page----------------------------------->
+    <script>
+        document.querySelector('.nav-select').addEventListener('change', function(){
+            window.location.hash = this.value;
+        });
+    </script>
+
+</body>
+<script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js" crossorigin="anonymous"></script>
+
+</html>
